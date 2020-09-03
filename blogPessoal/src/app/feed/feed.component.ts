@@ -40,7 +40,7 @@ publicar(){
   if (this.postagem.titulo == null || this.postagem.tema == null || this.postagem.texto == null) {
     alert ('Preencha todos os campos corretamente')
   } else {
-    this.postagemService.postPostagem(this.postagem).subscribe((resp: Postagem)=>{
+    this.postagemService.putPostagem(this.postagem).subscribe((resp: Postagem)=>{
       this.postagem = resp
       this.postagem = new Postagem()
       alert ('Postado com sucesso')

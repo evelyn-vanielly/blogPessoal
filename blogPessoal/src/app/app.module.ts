@@ -14,6 +14,10 @@ import { LoginComponent } from './login/login.component';
 import { CadastroComponent } from './cadastro/cadastro.component';
 import { OrderModule } from 'ngx-order-pipe';
 import { PostTemaComponent } from './post-tema/post-tema.component';
+import { PutPostagemComponent } from './put-postagem/put-postagem.component';
+import { PutTemaComponent } from './put-tema/put-tema.component';
+import { DeletePostComponent } from './delete-post/delete-post.component';
+import { DeleteTemaComponent } from './delete-tema/delete-tema.component';
 
 @NgModule({
   declarations: [
@@ -26,6 +30,10 @@ import { PostTemaComponent } from './post-tema/post-tema.component';
     LoginComponent,
     CadastroComponent,
     PostTemaComponent,
+    PutPostagemComponent,
+    PutTemaComponent,
+    DeletePostComponent,
+    DeleteTemaComponent,
   ],
   imports: [
     BrowserModule,
