@@ -3,6 +3,8 @@ import { Postagem } from './../model/Postagem';
 import { Tema } from './../model/Tema';
 import { PostagemService } from './../service/postagem.service';
 import { TemaService } from './../service/tema.service';
+import { AlertasService } from './../service/alertas.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-feed',
@@ -17,6 +19,7 @@ export class FeedComponent implements OnInit {
 postagem: Postagem = new Postagem()
 listaPostagens: Postagem[]
 
+
 Tema: Tema = new Tema()
 listaTemas: Tema[]
 idTema: number
@@ -24,7 +27,9 @@ nomeTema: string
 
   constructor(
     private postagemService: PostagemService,
-    private temaService: TemaService
+    private temaService: TemaService,
+    private alerta: AlertasService,
+    private router: Router
      ) { }
 
   ngOnInit(){
